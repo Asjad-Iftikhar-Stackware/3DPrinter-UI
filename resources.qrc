@@ -1,5 +1,14 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>assets/components/application/LinearSlider.qml</file>
+        <file>assets/components/application/CircularSlider.qml</file>
+        <file>assets/components/application/Joystick.qml</file>
+        <file>assets/images/temperature.svg</file>
+        <file>assets/images/resilience.svg</file>
+        <file>assets/images/grid-half.svg</file>
+        <file>assets/images/exhaust-pipe.svg</file>
+        <file>assets/images/check.svg</file>
+        <file>assets/images/3d-print.svg</file>
     </qresource>
 </RCC>
