@@ -8,14 +8,15 @@ Rectangle{
     radius: 18
     color:dark
 
+
     Slider {
         id: slider1
-        value: 0.5
+        value: 5
         from: 0
         to: 100
         leftPadding: 12
         topPadding: 5
-        bottomPadding: 0
+        bottomPadding: 5
 
 
         background: Rectangle {
@@ -55,7 +56,18 @@ Rectangle{
         radius: 18
         x: slider1.width + 5
         y: slider1.topPadding + slider1.availableHeight / 2 - height / 2
-        height: parent.height * 0.9
+        height: parent.height * 0.75
+        color: light
+    }
+
+    Label{
+        id: label1
+        text: Math.round(slider1.value) + "%"
+        font.pointSize: 24
+        topPadding: root.height / 4 + 3
+        anchors.right: root.right
+        anchors.rightMargin: 20
+
         color: light
     }
 

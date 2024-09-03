@@ -31,14 +31,13 @@ Window {
         }
 
 
-        Rectangle{
+        LinearSlider{
             id:pression
             width: 473
             height: 86
             radius: 18
             x:698
             y:208
-            color: dark
         }
 
         Image {
