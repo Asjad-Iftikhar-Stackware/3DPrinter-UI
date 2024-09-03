@@ -8,12 +8,15 @@ Rectangle{
     radius: 18
     color:dark
 
+    property real value
+    property real to
+    property real from
 
     Slider {
         id: slider1
-        value: 5
-        from: 0
-        to: 100
+        value: root.value
+        from: root.from
+        to: root.to
         leftPadding: 12
         topPadding: 5
         bottomPadding: 5

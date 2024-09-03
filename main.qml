@@ -28,6 +28,9 @@ Window {
             height: 86
             x:698
             y:62
+            value: 50
+            from: 0
+            to: 100
         }
 
 
@@ -38,6 +41,9 @@ Window {
             radius: 18
             x:698
             y:208
+            value: 50
+            from: 0
+            to: 100
         }
 
         Image {
