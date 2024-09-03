@@ -21,15 +21,15 @@ Window {
         anchors.margins: 10
 
 
-        Rectangle{
+
+        LinearSlider{
             id:ventilator
             width: 473
             height: 86
-            radius: 18
             x:698
             y:62
-            color: dark
         }
+
 
         Rectangle{
             id:pression
@@ -111,11 +111,8 @@ Window {
 
     }
 
-    LinearSlider {
-
-    }
-
     Joystick {
-
+        x: 1293
+        y: 114
     }
 }
