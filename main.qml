@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Controls
 import "qrc:/assets/components/application"
 
 Window {
@@ -55,6 +56,16 @@ Window {
             height: 70
         }
 
+        Text{
+            id:textVentilator
+            text:"Ventilateur"
+            font.pointSize: 20
+            font.bold: true
+            color: darkest
+            x: icon_ventilator.x - 35
+            y: icon_ventilator.y + icon_ventilator.height + 15
+        }
+
         Image {
             id: icon_pression
             source: "qrc:/assets/images/resilience.svg"
@@ -64,6 +75,16 @@ Window {
             height: 70
         }
 
+        Text{
+            id:textPressoion
+            text:"Pression"
+            font.pointSize: 20
+            font.bold: true
+            color: darkest
+            x: icon_pression.x - 15
+            y: icon_pression.y + icon_pression.height + 5
+        }
+
         Image {
             id: icon_3dprint
             source: "qrc:/assets/images/3d-print.svg"
@@ -71,6 +92,26 @@ Window {
             y:251
             width: 252
             height: 252
+        }
+
+        // E1 and E2 page switch button
+        Button {
+            id:pageSwitchButton
+            x:190
+            y:570
+            width: 51 +10
+            height: 40 +10
+            background: dark
+            onClicked: console.log("presses")
+
+            Label{
+                id:e1ButtonText
+                text: "E1"
+                font.pixelSize: pageSwitchButton.height
+                font.bold: true
+                color: darkest
+            }
+
         }
 
         Image {
