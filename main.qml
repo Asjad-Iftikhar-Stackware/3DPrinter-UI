@@ -101,7 +101,7 @@ Window {
             y:570
             width: 51 +10
             height: 40 +10
-            background: dark
+            background: null
             onClicked: console.log("presses")
 
             Label{
@@ -154,11 +154,28 @@ Window {
     }
 
     CircularSlider {
-
+        id: circularBar
+        x:540
+        y:380
+        targetValue: 0
     }
 
     Joystick {
         x: 1293
         y: 114
+    }
+
+    Slider {
+        id: testSlider
+        width: 200
+        height: 10
+        from: 0
+        to:300
+        stepSize: 1
+        value: 0
+
+        onValueChanged: {
+            circularBar.targetValue = testSlider.value
+        }
     }
 }
